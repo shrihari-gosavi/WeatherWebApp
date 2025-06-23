@@ -30,15 +30,15 @@ OpenWeatherMap API<br>
 
 
 ##  Project Structure.
-WeatherWebApp/
+WeatherWebApp/<br>
 │
-├── index.html # Main HTML file
-├── style.css # Styling (glassmorphism + responsive)
-├── script.js # JS logic and API interaction
-├── README.md # Project documentation
-└── images/ # Weather icons (clear, rain, cloud, snow, etc.)
+├── index.html # Main HTML file<br>
+├── style.css # Styling (glassmorphism + responsive)<br>
+├── script.js # JS logic and API interaction<br>
+├── README.md # Project documentation<br>
+└── images/ # Weather icons (clear, rain, cloud, snow, etc.)<br>
 
-Author.
+## Author.
 Shrihari Gosavi<br>
 Feel free to reach out or contribute!<br>
 GitHub Profile<br>
