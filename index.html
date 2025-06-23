@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Make website responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Webpage Title -->
+    <title>Weather API App</title>
+
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main weather card container -->
+    <div class="card">
+        <!-- Title of the app -->
+        <h3>Weather Web App</h3>
+
+        <!-- Search input field and button -->
+        <div class="search">
+            <!-- Text input for entering city name -->
+            <input type="text" id="city" placeholder="Search city..." onkeypress="handleKeyPress(event)">
+            
+            <!-- Button to trigger weather fetch -->
+            <button onclick="fetchWeather()">
+                <!-- Search icon -->
+                <img src="images/search.png" alt="Search">
+            </button>
+        </div>
+
+        <!-- Section to display weather information -->
+        <div id="weatherInfo">
+            <!-- Dynamic weather icon -->
+            <img id="weatherIcon" class="weather-icon" src="" alt="Weather Icon">
+
+            <!-- Instructional or status message -->
+            <p id="weatherMessage">Enter a city to get the weather.</p>
+
+            <!-- Weather data fields -->
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="windSpeed"></p>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

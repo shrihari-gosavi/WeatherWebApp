@@ -1,0 +1,132 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #d1c4e9, #90caf9, #a5d6a7); /* Pastel radial background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    animation: fadeInBody 1s ease-in; /* Fade-in effect for body */
+}
+
+/* === Body Animation === */
+@keyframes fadeInBody {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* === Card (Glassmorphism Style) === */
+.card {
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white */
+    backdrop-filter: blur(12px);           /* Glass blur effect */
+    -webkit-backdrop-filter: blur(12px);   /* Safari support */
+    padding: 30px 25px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Light border */
+    text-align: center;
+    animation: slideInUp 0.8s ease-out; /* Slide-in effect */
+}
+
+/* === Slide-in Animation for Card === */
+@keyframes slideInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Search Bar Container === */
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.8s;
+}
+
+/* === Input Field Styles === */
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1.5px solid #ffffffaa;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #1976d2;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 6px rgba(25, 118, 210, 0.4);
+    outline: none;
+}
+
+/* === Search Button === */
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.05); /* Zoom on hover */
+}
+
+button img {
+    width: 20px;
+}
+
+/* === Weather Icon Image === */
+.weather-icon {
+    width: 80px;
+    margin: 10px auto;
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* === Weather Message Text === */
+#weatherMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #444;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 1s;
+}
+
+/* === Generic Fade-in Animation === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Utility Class to Hide Elements === */
+.hidden {
+    display: none;
+}
+
+/* === Responsive Design for Mobile Devices === */
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
