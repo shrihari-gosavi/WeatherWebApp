@@ -31,7 +31,7 @@ OpenWeatherMap API<br>
 
 ##  Project Structure.
 WeatherWebApp/<br>
-│
+│<br>
 ├── index.html # Main HTML file<br>
 ├── style.css # Styling (glassmorphism + responsive)<br>
 ├── script.js # JS logic and API interaction<br>
